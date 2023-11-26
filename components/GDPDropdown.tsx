@@ -35,7 +35,7 @@ export default function GDPDropdown() {
         return formattedAmount.replace("$", "$ ");
       };
       const gdpres = await axios.get(
-        `http://api.worldbank.org/v2/country/${country}/indicator/NY.GDP.MKTP.CD?format=json`
+        `https://api.worldbank.org/v2/country/${country}/indicator/NY.GDP.MKTP.CD?format=json`
       );
 
       // Assuming the response format is JSON and contains the GDP data
